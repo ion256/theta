@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>eta: Fichero Fuente /home/.static/devel/untracked/eta/src/funciones/aleintambos.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.2-20100208 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    </ul>
+  </div>
+<h1>/home/.static/devel/untracked/eta/src/funciones/aleintambos.hpp</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keywordtype">int</span> aleintambos(<span class="keywordtype">int</span> minima, <span class="keywordtype">int</span> maxima)
+<a name="l00002"></a>00002 {
+<a name="l00004"></a>00004 
+<a name="l00010"></a>00010         <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)( ((<span class="keywordtype">long</span> double)minima) + 
+<a name="l00011"></a>00011       ( (<span class="keywordtype">long</span> double) rand() / (<span class="keywordtype">long</span> double) RAND_MAX) * 
+<a name="l00012"></a>00012       ( ((<span class="keywordtype">long</span> double) maxima+1) - ( (<span class="keywordtype">long</span> double) minima) ));
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 }
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.2-20100208 </small></address>
+</body>
+</html>

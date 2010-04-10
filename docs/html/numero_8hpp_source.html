@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>eta: Fichero Fuente /home/.static/devel/untracked/eta/src/funciones/numero.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.2-20100208 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    </ul>
+  </div>
+<h1>/home/.static/devel/untracked/eta/src/funciones/numero.hpp</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keywordtype">int</span> numero(std::string&amp; nota){
+<a name="l00003"></a>00003 
+<a name="l00007"></a>00007   <span class="keywordtype">int</span> i;
+<a name="l00008"></a>00008   <span class="keywordflow">for</span>( i=0; nota.compare(tabladenotas[i]) != 0 &amp;&amp; (i&lt;90) ; i++ ){} <span class="comment">// selfnote: nota.compare will return 0 when match.</span>
+<a name="l00009"></a>00009   <span class="keywordflow">if</span>(i&gt;89) <span class="keywordflow">return</span> 0; <span class="comment">// this means that badly spelled notes will run out the counter and return 0</span>
+<a name="l00010"></a>00010   <span class="keywordflow">return</span> i+1;
+<a name="l00011"></a>00011 }
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.2-20100208 </small></address>
+</body>
+</html>
