@@ -1,6 +1,6 @@
-// middle C (261,63Hz) corresponds to do', in the fifth line, third octave if we count the zero octave
-char tabladenotas[][9]={
-"la,,,", "las,,,", "si,,,",
+// 88 keys. Middle C (261,63Hz) corresponds to do', in the fifth line, third octave if we count the zero octave. It is assigned the number 40, otherwise there is a bug.
+std::string tabladenotas[]={
+"la,,,", "las,,,", "si,,,",//noob self-note: the first element has the index 0, not 1, that's why in note function you use "input-1"
 "do,,", "dos,,", "re,,", "res,,", "mi,,", "fa,,", "fas,,", "sol,,", "sols,,", "la,,", "las,,", "si,,",
 "do,", "dos,", "re,", "res,", "mi,", "fa,", "fas,", "sol,", "sols,", "la,", "las,", "si,",
 "do", "dos", "re", "res", "mi", "fa", "fas", "sol", "sols", "la", "las", "si",

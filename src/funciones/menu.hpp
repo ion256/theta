@@ -2,7 +2,7 @@ int setdefaults(){
   autor=menu[0].value;
   titulo=menu[1].value;
   debug=atoi(menu[2].value.c_str());
-  longitud=atoi(menu[3].value.c_str());
+  scoreLength=atoi(menu[3].value.c_str());
   tonica=menu[4].value;
   notaminima=menu[5].value;
   notamaxima=menu[6].value;
